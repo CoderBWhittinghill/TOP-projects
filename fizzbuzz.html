@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+     <!--   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>FIZZBUZZ</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+       
+        <header><h1>"FizzBuzz"</h1></header>
+    </head>
+    <!-- The point of this exercise is to have the program print out a variable (fizz or buzz) depending upon a boolean response to a mathmatical question. The user inputs a number from 1-100 and the program will proceed to print a number line; the objective is then to input fizz i a number is divisible by 3, and buzz if it's divisable by 5; and fizzbuzz if it's both.
+    This is my first attempt at this program and I realize it's an important one used in job applications.-->
+    <body>
+        <script>
+
+            let answer = parseInt(prompt("Please enter the number you wish to use:"));
+
+            for (let i = 1; i <= answer; i++) {
+                if ( i % 3 === 0 && i % 5 === 0) {
+                    console.log("FizzBuzz")
+                }
+                else if ( i % 3 ===0) {
+                    console.log("fizz")
+                }
+                else if ( i % 5 === 0) {
+                    console.log("buzz")
+                }
+                else {
+                    console.log(i)
+                }
+            }
+
+
+        </script>
+
+
+        
+       
+
+    </body>
+</html>
